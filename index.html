@@ -364,7 +364,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2020-10-17 18:19:26 / Modified: 21:26:39" itemprop="dateCreated datePublished" datetime="2020-10-17T18:19:26+08:00">2020-10-17</time>
+      <time title="Created: 2020-10-17 18:19:26 / Modified: 21:29:23" itemprop="dateCreated datePublished" datetime="2020-10-17T18:19:26+08:00">2020-10-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -399,7 +399,7 @@
 <li>Only one valid answer exists.</li>
 </ul>
 <hr>
-<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><h3 id="1-Brute-Force"><a href="#1-Brute-Force" class="headerlink" title="1.Brute Force"></a>1.Brute Force</h3><p>Loop through each element x and find if there is another  value that equals to target-x</p>
+<h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><h3 id="Brute-Force"><a href="#Brute-Force" class="headerlink" title="Brute Force"></a>Brute Force</h3><p>Loop through each element x and find if there is another  value that equals to target-x</p>
 <h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> int* twoSum(int* nums, int numsSize, int target, int* returnSize)&#123;</span><br><span class="line">        for(int i&#x3D;0;i&lt;numsSize-1;i++)&#123;</span><br><span class="line">            for(int j&#x3D;i+1;j&lt;numsSize;j++)</span><br><span class="line">                if(nums[i]+nums[j]&#x3D;&#x3D;target)&#123;</span><br><span class="line">                    returnSize[0]&#x3D;i;</span><br><span class="line">                    returnSize[1]&#x3D;j;</span><br><span class="line">                    return returnSize;</span><br><span class="line">                &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    return NULL;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h3><p><em>Runtime Error</em></p>
 <h3 id="2-Hash-Table"><a href="#2-Hash-Table" class="headerlink" title="2. Hash Table"></a>2. Hash Table</h3><h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2>
